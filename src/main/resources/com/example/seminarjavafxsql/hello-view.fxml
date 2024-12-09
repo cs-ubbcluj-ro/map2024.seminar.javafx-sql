@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.seminarjavafxsql.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <ListView fx:id="listViewArtists"/>
+    <HBox>
+        <VBox>
+            <Label fx:id="labelId">Artist Id</Label>
+            <TextField fx:id="textFieldArtistId"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelName">Artist Name</Label>
+            <TextField fx:id="textFieldArtistName"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelGenre">Artist Genre</Label>
+            <TextField fx:id="textFieldArtistGenre"/>
+        </VBox>
+    </HBox>
+    <HBox>
+        <Button fx:id="buttonAdd" onAction="#onAddButtonClicked">Adauga artist</Button>
+        <Button fx:id="buttonUpdate" onAction="#onUpdateButtonClicked">Actualizeaza</Button>
+    </HBox>
+</VBox>
